@@ -1,31 +1,57 @@
-const  gulp = require('gulp');
-const sass = require('gulp-sass');
-const browserSync = require('browser-sync').create();
+// Initialize modules
+const { src, dest, watch, series } = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
+const babel = require('gulp-babel');
+const terser = require('gulp-terser');
+const browsersync = require('browser-sync').create();
 
-//compile scss into css
-function style() {
-    return gulp.src('./scss/**/*.scss')
-     
-    .pipe(sass().on('error', sass.logError))
-
-    .pipe(gulp.dest('./css'))
-
-    .pipe(browserSync.stream())
-
+// Sass Task
+function scssTask() {
+	return src('app/scss/style.scss', { sourcemaps: true })
+		.pipe(sass())
+		.pipe(postcss([autoprefixer(), cssnano()]))
+		.pipe(dest('dist', { sourcemaps: '.' }));
 }
 
-
-
-function watch() {
-    browserSync.init({
-        server: {
-            baseDir: './'
-        }
-    });
-    gulp.watch('./scss/**/*.scss', style);
-    gulp.watch('./*.html').on('change',browserSync.reload);
-    // gulp.watch('./js/**/*.js').on('change',browserSync.reload);
-
+// JavaScript Task
+function jsTask() {
+	return src('app/js/script.js', { sourcemaps: true })
+		.pipe(babel({ presets: ['@babel/preset-env'] }))
+		.pipe(terser())
+		.pipe(dest('dist', { sourcemaps: '.' }));
 }
-exports.style = style;
-exports.watch = watch;
+
+// Browsersync
+function browserSyncServe(cb) {
+	browsersync.init({
+		server: {
+			baseDir: '.',
+		},
+		notify: {
+			styles: {
+				top: 'auto',
+				bottom: '0',
+			},
+		},
+	});
+	cb();
+}
+function browserSyncReload(cb) {
+	browsersync.reload();
+	cb();
+}
+
+// Watch Task
+function watchTask() {
+	watch('*.html', browserSyncReload);
+	watch(
+		['app/scss/**/*.scss', 'app/**/*.js'],
+		series(scssTask, jsTask, browserSyncReload)
+	);
+}
+
+// Default Gulp Task
+exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
