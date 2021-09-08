@@ -5,6 +5,11 @@ h2,
 h3 {
 	margin-top: 0;
 	line-height: 1.1;
+	font-family: var(--font-headings);
+}
+
+a, p {
+	font-family: var(--font-paragraphs);
 }
 
 a,
