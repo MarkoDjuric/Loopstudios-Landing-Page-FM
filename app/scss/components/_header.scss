@@ -1,16 +1,19 @@
 
 header {
-    background-image:url("../../../images/desktop/image-hero.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../../../images/desktop/image-hero.jpg");
     height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
   
     // background-color: black;
 }
 
 nav {
-    max-width: 1110px;
+    max-width: 1160px;
+    padding: 40px 24px 163px 24px;
+    border: 1px solid white;
 
      
 }
