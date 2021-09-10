@@ -1,6 +1,6 @@
 
 .header {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../../../images/desktop/image-hero.jpg");
+   background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../../../images/desktop/image-hero.jpg"); 
     height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,13 +20,21 @@
     }
             
 
-    &__menu {     // Mobile Menu
+        &__menu {     // Mobile Menu
        
-        > span {
-            display: block;
-            width: 24px;
-            height: 2px;
-        } 
+            > span {
+                display: block;
+                width: 24px;
+                height: 2px;
+                background-color: var(--white);
+
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+            } 
+           
+              
+             
      
     }
 
