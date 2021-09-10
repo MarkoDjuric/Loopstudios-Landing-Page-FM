@@ -20,22 +20,23 @@
     }
             
 
-        &__menu {     // Mobile Menu
-       
-            > span {
-                display: block;
-                width: 24px;
-                height: 2px;
-                background-color: var(--white);
+    &__menu {     // Mobile Menu
+    
+        > span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: var(--white);
+            cursor: pointer;
 
-                &:not(:last-child) {
-                    margin-bottom: 5px;
-                }
-            } 
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        } 
+    }
+
+}
            
               
              
      
-    }
-
-}

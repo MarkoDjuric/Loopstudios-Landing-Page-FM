@@ -25,11 +25,22 @@ h1, h2, h3 {
 
 a, a:hover, a:visited{
 	text-decoration: none;
+
+
+
+
 }
+
 
 li {
 	list-style: none;
 	color: var(--white);
 	line-height: 25px;
+	cursor: pointer;
 
+	&:hover {
+		 border-bottom: 0.3px solid white;
+		
+		
+	}
 }
