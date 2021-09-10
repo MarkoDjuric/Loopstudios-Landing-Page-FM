@@ -13,15 +13,21 @@
         display: flex;
         justify-content: space-between;
 
-        ul {
-            display: flex;
-            gap: 32px;
-            
-        }   
+            ul {
+                display: flex;
+                gap: 32px;
+            }   
     }
+            
 
     &__menu {     // Mobile Menu
-
+       
+        > span {
+            display: block;
+            width: 24px;
+            height: 2px;
+        } 
+     
     }
 
 }
