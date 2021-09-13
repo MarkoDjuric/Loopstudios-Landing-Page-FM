@@ -1,3 +1,5 @@
+ 
+
 html {
 	font-size: 100%;
 	// font-size: 62%;
@@ -25,11 +27,10 @@ h1, h2, h3 {
 
 a, a:hover, a:visited{
 	text-decoration: none;
-
-
-
-
 }
+
+
+
 
 
 li {
@@ -40,7 +41,19 @@ li {
 
 	&:hover {
 		 border-bottom: 0.3px solid white;
-		
-		
+		}
 	}
-}
+
+	
+	.hide-for-mobile {
+		@include breakpoint-down(medium) {
+			display: none;
+		}
+	}
+		
+	.hide-for-desktop {
+		@include breakpoint(large) {
+			display: none;
+		
+		}
+	}
