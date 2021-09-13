@@ -8,6 +8,12 @@ h3 {
 	font-family: var(--font-headings);
 }
 
+h1 {
+	font-size:2.5rem;
+	line-height: 38px;
+	max-width: 570px;
+}
+
 a, p, li {
 	font-family: var(--font-paragraphs);
 }
