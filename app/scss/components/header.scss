@@ -36,12 +36,12 @@
             background-color: var(--white);
             cursor: pointer;
             
-
             &:not(:last-child) {
                 margin-bottom: 5px;
             }
         } 
     }
+
 
     &__logo {
         width:45%;
