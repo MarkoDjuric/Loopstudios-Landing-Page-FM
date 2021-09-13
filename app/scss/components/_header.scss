@@ -1,10 +1,12 @@
 
 .header {
-   background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../../../images/desktop/image-hero.jpg"); 
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../../../images/desktop/image-hero.jpg"); 
     height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
+ 
 
     &__nav {
         max-width: 1160px;
@@ -12,28 +14,38 @@
         border: 1px solid white;
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
             ul {
                 display: flex;
                 gap: 32px;
+               
             }   
     }
             
 
-    &__menu {     // Mobile Menu
-    
+    &__menu {
+     
+            // Mobile Menu
+      
         > span {
             display: block;
             width: 24px;
             height: 2px;
             background-color: var(--white);
             cursor: pointer;
+            
 
             &:not(:last-child) {
                 margin-bottom: 5px;
             }
         } 
     }
+
+    // &__logo_img {
+    //     max-width: 192px;
+    //     width:45%;
+    // }
 
 }
            
