@@ -41,7 +41,8 @@
 
 
     &__logo {
-        width:45%;
+        // width:45%;
+        width:clamp(144px, 22%, 192px);
         img {
             max-width:100%;
         }
@@ -49,7 +50,9 @@
 
     &__heading_wrap {
           max-width: 1160px;
-          padding:163px 24px 227px 24px;
+          padding-left: 24px; 
+          padding-right: 24px;
+          padding-bottom: 227px;
           display: flex;
         .header__heading {
             // max-width: 48%;
