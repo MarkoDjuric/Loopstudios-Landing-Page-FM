@@ -41,8 +41,9 @@
 
 
     &__logo {
-        // width:45%;
+       
         width:clamp(144px, 22%, 192px);
+
         img {
             max-width:100%;
         }
@@ -54,15 +55,16 @@
           padding-right: 24px;
           padding-bottom: 227px;
           display: flex;
+
         .header__heading {
-            // max-width: 48%;
             flex-basis: 58.49%;
             border: 1px solid white;
             color: var(--white);
-            padding: calc(26px + 1.1vh) calc(24px + 1.1vw);
+            padding: calc(26px + 1.1vh) calc(24px + 1.1vw); // new feature
         }
     }
 }
+            
           
    
     
