@@ -56,10 +56,10 @@
           display: flex;
         .header__heading {
             // max-width: 48%;
-            flex-basis: 48%;
+            flex-basis: 58.49%;
             border: 1px solid white;
             color: var(--white);
-            padding: 26px 24px;
+            padding: calc(26px + 1.1vh) calc(24px + 1.1vw);
         }
     }
 }
