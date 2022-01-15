@@ -8,12 +8,12 @@
 
        
   .banner__grid_img {
-      width: clamp(327px, 100%, 731px);
+      max-width: clamp(327px, 100%, 731px);
        grid-column: 1 / span 3;
        grid-row: 1 / 2;
 
        img {
-           width: (327px, 50%, 731px)
+           min-width:100%
        }
   
       }
