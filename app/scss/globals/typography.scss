@@ -24,6 +24,12 @@ h1 {
 	font-weight: 300;
 }
 
+h2 {
+	font-size: calc( 32px + (48 - 32) * (100vw - 375px) / (1440 - 375) );
+	line-height: clamp(2rem, 6vw, 3rem);
+	
+}
+
 a, p, li {
 	font-family: var(--font-paragraphs);
 }
