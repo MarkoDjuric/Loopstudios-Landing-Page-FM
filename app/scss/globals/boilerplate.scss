@@ -44,20 +44,37 @@ li {
 	}
 
 	
-	.hide-for-mobile {
+	// .hide-for-mobile {
 	
-		@include breakpoint-down(small) {
-			display: none;
-		}
-	}
+	// 	@include breakpoint-down(small) {
+	// 		display: none;
+	// 	}
+	// }
 			
-	.hide-for-desktop {
+	// .hide-for-desktop {
 	
-		@include breakpoint(medium) {
-			display: none;
-		}
-	}
+	// 	@include breakpoint-up(medium) {
+	// 		display: none;
+	// 	}
+	// }
+
+	// .mobile {
+	// 	@include breakpoint-up(large) {
+	// 		grid-template-columns:  1fr auto auto 1fr;
+	// 		grid-template-rows: 183px 96px 221px;
+	// 	}
+	// }
 			
-		
+	// .mob_image {
+	// 	@include breakpoint-up(large) {
+	// 		grid-column: 1 / span 3;
+	// 		grid-row: 1 / 2;
+	// 	}
+	// }	
 			
-		
+	// .mob_txt {
+	// 	@include breakpoint-up(large) {
+	// 		grid-column: 2 /span 3;
+	// 		grid-row: 2 / span 2;
+	// 	}
+	// }	
