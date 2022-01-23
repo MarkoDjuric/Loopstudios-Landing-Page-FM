@@ -1,10 +1,12 @@
-
+@use '../util' as *;
 
 html {
 	font-size: 100%;
 	// font-size: 62%;
 	box-sizing: border-box;
     scroll-behavior: smooth;
+
+overflow-x: hidden;
    		
 }
 
@@ -25,6 +27,9 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
+	position: relative;
+
+	
     overflow-x: hidden; 		
 }
 
@@ -52,20 +57,33 @@ li {
 
 
 
+	.hide-for-mobile {
 	
-	// .hide-for-mobile {
-	
-	// 	@include breakpoint-down(small) {
-	// 		display: none;
-	// 	}
-	// }
+		@include breakpoint-down(medium) {
+			display: none;
+		}
+	}
 			
-	// .hide-for-desktop {
+	.hide-for-desktop {
 	
-	// 	@include breakpoint-up(medium) {
-	// 		display: none;
-	// 	}
-	// }
+		@include breakpoint-up(large) {
+			display: none;
+		}
+	}
+	
+    .nav_scroll {
+
+		position: fixed;
+		background-color: black;
+		transition: 600ms ease-in;
+		
+		
+		
+	}
+  
+
+		
+		
 
 	// .mobile {
 	// 	@include breakpoint-up(large) {

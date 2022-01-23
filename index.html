@@ -16,7 +16,7 @@
 	</head>
 	<body>
 		<!-- Header -->
-	<header class="header">
+	<header class="header container">
 		
 		<nav class="header__nav container">
 			<!-- Logo -->
@@ -30,7 +30,7 @@
 				<span></span>
 		    </a>
 				<!-- Desktop Menu  -->
-			 <!-- <div class="hide-for-mobile">
+			 <div class="hide-for-mobile">
 				<ul>
 					<li><a href="#"></a>About</li>
 					<li><a href="#"></a>Careers</li>
@@ -38,7 +38,7 @@
 					<li><a href="#"></a>Products</li>
 					<li><a href="#"></a>Support</li>
 				</ul>
-			</div> -->
+			</div>
 	    </nav>
 
 		<div class="header__heading_wrap container">
@@ -66,7 +66,7 @@
 					</div>
 				</div>
 		</section>  
-		<!-- <section class="creations">
+		<section class="creations">
 			<div class="creations__wrapper container">
 				<h2>OUR CREATIONS</h2>
 				<a href="#">SEE ALL</a>
@@ -83,9 +83,33 @@
 				</div>
 			</div>
 
-		</section> -->
+		</section>
+		<section class="creations">
+			<div class="creations__wrapper container">
+				<h2>OUR CREATIONS</h2>
+				<a href="#">SEE ALL</a>
+				<div class="gallery">
+					<img src="" alt="">
+					<img src="" alt="">
+					<img src="" alt="">
+					<img src="" alt="">
+					<img src="" alt="">
+					<img src="" alt="">
+					<img src="" alt="">
+					<img src="" alt="">
+
+				</div>
+			</div>
+
+		</section>
 
    
       
+	<script>
+window.addEventListener("scroll", function() {
+	var header = document.querySelector("nav");
+	header.classList.toggle("nav_scroll", window.scrollY>200);
+})
+	</script>
 	</body>
 </html>
