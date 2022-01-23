@@ -6,8 +6,6 @@
         padding-top: 163px;
     }
 
-// width: 130%;
-
     background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../../../images/mobile/image-hero.jpg"); 
     height: 85.5vh;
     background-repeat: no-repeat;
@@ -15,20 +13,26 @@
     background-position: center;
     z-index: 10;
       
-      
+    @media only screen and (min-width:52.813em) { 
+        background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../../../images/desktop/image-hero.jpg"); 
+    }
 
 
     // font-size:minmax(0.5rem, 1rem);
  
     &__nav {
        
-        // max-width: 72.5rem;
-
-        width: 100%;
+         max-width: 72.5rem;
         padding: 40px 24px 40px 24px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media only screen and (min-width:52.813em) { 
+            padding: 64px 165px 130px 165px;
+           
+         
+        }
 
         // display: grid;
         // grid-template-columns: minmax(100px,1fr) repeat(5,auto);
@@ -36,9 +40,7 @@
         .hide-for-mobile {
             font-size: calc( 12px + (15 - 12) * (100vw - 320px) / (1440 - 320) );
         } 
-      
        
-  
         ul {
             display: flex;
             gap: 32px;           

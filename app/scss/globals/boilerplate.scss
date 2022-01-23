@@ -2,13 +2,11 @@
 
 html {
 	font-size: 100%;
-	// font-size: 62%;
 	box-sizing: border-box;
     scroll-behavior: smooth;
-
-overflow-x: hidden;
-   		
+    overflow-x: hidden;
 }
+	
 
 *,
 *::before,
@@ -28,8 +26,6 @@ body {
     margin: 0px;
     padding: 0px;
 	position: relative;
-
-	
     overflow-x: hidden; 		
 }
 
@@ -56,7 +52,6 @@ li {
 	}
 
 
-
 	.hide-for-mobile {
 	
 		@include breakpoint-down(medium) {
@@ -71,15 +66,22 @@ li {
 		}
 	}
 	
+	// navbar class on-scroll
     .nav_scroll {
-
 		position: fixed;
 		background-color: black;
 		transition: 500ms ease-in;
-		
-		
-		
+		width: 100%;
+		padding: 40px 24px 40px 24px !important;
+	
 	}
+		  
+	
+	
+		
+		
+		
+
   
 
 		
