@@ -1,44 +1,46 @@
 @use '../util' as *;
 
+
 .header {
   
-    &__heading_wrap {
-        padding-top: 163px;
-    }
-
     background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../../../images/mobile/image-hero.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    z-index: 10;
-
-      
-        @media only screen and (min-width:52.813em) { 
+   
+        @media only screen and (min-width:74.75em) { 
             background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../../../images/desktop/image-hero.jpg"); 
         }
-
-
-    // font-size:minmax(0.5rem, 1rem);
  
     &__nav {
        
-    //     max-width: 1110px;
-    //   width: 100%;
-        // padding: 40px 24px 40px 24px;
-        padding-top: calc( 48px + (60 - 48) * (100vw - 375px) / (1440 - 375) );
-        padding-right: calc( 24px + (165 - 24) * (100vw - 375px) / (1440 - 375) );
-        padding-left: calc( 24px + (165 - 24) * (100vw - 375px) / (1440 - 375) );
-        // padding-left:clamp(40px, 20vw, 165px);
+        max-width: 90rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 2.5rem 1.5rem 10.188rem 1.5rem;
+        // padding-top: calc( 48px + (60 - 48) * (100vw - 375px) / (1440 - 375) );
+        // padding-right: calc( 24px + (165 - 24) * (100vw - 375px) / (1440 - 375) );
+        // padding-left: calc( 24px + (165 - 24) * (100vw - 375px) / (1440 - 375) );
+        // padding-left:clamp(40px, 20vw, 165px);
+     
+        @media only screen and (min-width:31.875em) { 
+            padding:3.7rem 3.2rem 7.8rem 3.2rem;
+        }
 
-        // @media only screen and (min-width:52.813em) { 
-        //     padding: 64px 165px 130px 165px;
-           
-         
+        @media only screen and (min-width:48.875em) { 
+             padding:3.8rem 5rem 7rem 5rem;
+        }
+
+
+    @media only screen and (min-width:79.063em) { 
+            padding: 4rem 10.313rem 8.125rem 10.313rem;
+        }
+
+        // @media only screen and (min-width:74.75em) { 
+        //     padding: 4rem 10.313rem 8.125rem 10.313rem;
         // }
-
+                
         // display: grid;
         // grid-template-columns: minmax(100px,1fr) repeat(5,auto);
        
@@ -48,64 +50,107 @@
        
         ul {
             display: flex;
-            gap: 32px;           
+            gap: 2rem;           
         }   
     }
-               
-    &__menu {
-     
-   // Mobile Menu     
-        > span {
-            display: block;
-            width: 24px;
-            height: 2px;
-            background-color: var(--white);
-            cursor: pointer;
+
+    //52.813em    
+            &__menu {
             
-            &:not(:last-child) {
-                margin-bottom: 5px;
+        // Mobile Menu     
+                > span {
+                    display: block;
+                    width: 1.5rem;
+                    height: 0.125rem;
+                    background-color: var(--white);
+                    cursor: pointer;
+                    
+                    &:not(:last-child) {
+                        margin-bottom: 0.313rem;
+                    }
+                } 
             }
-        } 
-    }
 
-    &__logo {
-       
-        width:clamp(144px, 17%, 192px);
+            &__logo {
+            
+                width:clamp(9rem, 17%, 12rem);
 
-        img {
-            width:100%;
-        }
-    }
+                img {
+                    width:100%;
+                }
+            }
+
+     // Hero heading
 
     &__heading_wrap {
       
-          max-width: 1160px;
+          max-width: 90rem;
           display: flex;
-          padding-left: calc( 24px + (165 - 24) * (100vw - 375px) / (1440 - 375) ); 
-          padding-right: 24px;
-          padding-bottom:calc( 227px + (146 - 227) * (100vw - 375px) / (1440 - 375) );
+          padding-left: 1.5rem; 
+          padding-right: 1.5rem;
+          padding-bottom: 14.188rem;
+      
           
-
-        //   @media only screen and (min-width:52.813em) { 
-        //     padding-left:  165px;
+          @media only screen and (min-width:31.875em) { 
+            padding:3.7rem 3.2rem 7.8rem 3.2rem;
+        }
+         @media only screen and (min-width:48.875em) { 
+             padding:3.8rem 5rem 7rem 5rem;
+        }
+        @media only screen and (min-width:79.063em) { 
+            padding: 4rem 10.313rem 8.125rem 10.313rem;
+        }
+        //   @media only screen and (min-width:74.75em) { 
+        //     padding-left:  10.313rem;
+        //     // padding-right:  5rem;
            
-           
-         
         // }
-     
+                 
         //   font-size: calc( 40px + (72 - 40) * (100vw - 320px) / (1440 - 375) );
         .header__heading {
-            // flex-basis: 58.49%;
-            padding:calc( 24px + (40 - 24) * (100vw - 375px) / (1440 - 375) ); 
-            width:calc( 327px + (652 - 327) * (100vw - 375px) / (1440 - 375) );  
-            // min-width: 650px;
+           max-width: 40.625rem;
+           padding: 1.438rem;
+           flex: 3;
+          
+            // padding:calc( 24px + (40 - 24) * (100vw - 375px) / (1440 - 375) ); 
+            // width:calc( 327px + (652 - 327) * (100vw - 375px) / (1440 - 375) );  
+            // // min-width: 650px;
             border: 1px solid white;
             color: var(--white);
+            h1 {
+               min-width:279px;
+            }
+
+        
+          
+            @media only screen and (min-width:31.875em) { 
+                padding:2.2rem;
+            }
+
+            @media only screen and (min-width:74.75em) { 
+                padding:2.5rem;
+            }
+              
+               
+
             // padding:calc( 24px + (40 - 24) * (100vw - 375px) / (1440 - 375) ); 
             // min-width: 327px;
             // margin-left: 24px;
             // margin-right: 24px;
             //  padding: calc(26px + 1.1vh) calc(24px + 1.1vw); // new feature
+
+            // @media only screen and (min-width:1700px) {
+
+            //     h1 {
+            //         font-size:72px;
+            //         line-height: 70px;
+            //     }
+            	
+        //}
+        }
+    .right_box {
+            flex: 1;
+            flex-basis: 12%;
         }
     }
 

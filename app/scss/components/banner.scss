@@ -4,31 +4,40 @@
 .banner {
 
     &__grid {
-        max-width: 69.438rem;
+        max-width: 1111px;
+        // width: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        padding-top: 25.6%;
-        padding-left: 6.4%;
-        padding-right: 6.4%;
-      
+        // padding-top: 25.6%;
+        padding-top: calc( 96px + (160 - 96) * (100vw - 375px) / (1440 - 375) );
+        padding-left: calc( 24px + (164 - 24) * (100vw - 375px) / (1440 - 375) );
+        padding-right: calc( 24px + (165 - 24) * (100vw - 375px) / (1440 - 375) );
+        // padding-left: 6.4%;
+        // padding-right: 6.4%;
+        // @media only screen and (min-width:90.1rem) {
+        //   padding-top: 160px!important;
+        //   padding-left: 164px!important;
+        //   padding-top: 164px!important;
 
-        @media only screen and (min-width:52.813em) {
+        // }
+        
+        @media only screen and (min-width:1168px) {
           grid-template-columns:  1fr auto auto 1fr;
           grid-template-rows: 183px 96px 221px;
-          padding-top: 172px;
-          padding-left: 0;
-          padding-right:0;
+          // padding-top: 172px;
+          padding-left: 0px;
+          padding-right:0px;
         }
-      
+
 
         .banner__grid_img {
-          width: clamp(20.313rem, 100%, 45.688rem);
+          // width: clamp(20.313rem, 100%, 45.688rem);
                   
             img {
               width: 100%;
             }
                 
-          @media only screen and (min-width:52.813em) {
+          @media only screen and (min-width:1168px) {
             grid-column: 1 / span 3;
             grid-row: 1 / 2;
 
@@ -39,29 +48,34 @@
     
         }
              
-        
+        //52.813em
       .banner__grid_text {
       
-        width: clamp(327px, 100%, 541px);          
         background-color: #FFF;
         text-align: center;
         padding-left: 24px;
         padding-right: 24px;
         margin-top: 48px;
+        
         // margin-right: 17.2%;
         h2 {
           
           text-align: center;
-          padding-bottom: 16px;
+          padding-bottom: 1rem;
+
+          
         }
         p {
-            font-size: 15px;
+            font-size: 0.938rem;
             line-height: 25px;
+           
             // width: 445px;
           }
+       
     
          
-          @media only screen and (min-width:52.813em) {
+          @media only screen and (min-width:1168px) {
+            width: clamp(327px, 100%, 541px);  
             padding-top: 17.22%;
             padding-left: 17.22%;
             padding-right: 0;
@@ -77,6 +91,12 @@
             }
     
           }
+            @media only screen and (min-width:90.1rem) {
+              h2 {
+                font-size: 48px;
+              }
+
+           }
 
         }
       }

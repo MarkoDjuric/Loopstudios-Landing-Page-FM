@@ -1,5 +1,6 @@
 @use '../util' as *;
 
+
 h1,
 h2,
 h3 {
@@ -9,22 +10,26 @@ h3 {
 	font-weight: 300;
 }
 
+
 h1 {
 
-	font-size: calc( 40px + (72 - 40) * (100vw - 375px) / (1440 - 375) );
+	font-size:clamp(2.5rem, 7vw, 4.5rem);
 	line-height: clamp(2.4rem, 6vw, 4.4rem);
-	// width: clamp(279px, 100%, 570px);	
 }
+	
 
 h2 {
-	font-size: calc( 32px + (48 - 32) * (100vw - 375px) / (1440 - 375) );
-	 line-height: clamp(32px, 4vw, 48px);
-	// width: clamp(279px, 100%, 445px);	
+	// font-size:clamp(2rem, 8vw, 3rem);
+	font-size:calc( 32px + (48 - 32) * (100vw - 375px) / (1440 - 375) );
+	line-height: clamp(2rem, 4vw, 3rem);
+	// 	 width: clamp(279px, 100%, 445px);
 }
+
 
 a, p, li {
 	font-family: var(--font-paragraphs);
 }
+
 
 a,
 a:visited,
