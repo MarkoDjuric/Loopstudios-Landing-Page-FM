@@ -1,23 +1,31 @@
 
-.content-wrapper {
-    padding: 1.563rem;
-    display: grid;
-    grid-template-columns: 1fr;
+.creations {
+    margin-top:6rem; 
+    
+    
+    .content-wrapper {
+        
+        padding-left: 1.563rem;
+        padding-right: 1.563rem;
+      
+        display: grid;
+        grid-template-columns: 1fr;
 
-    .content-wrapper > * {
-
-        justify-items: center;
-    }
-
-
-    h2 {
-
-        justify-self: center;
+    
+        h2 {
+            padding-bottom: 3rem;
+            justify-self: center;
+            
+        }
+        
+        img {
+            width: 100%;
+        }
+        
     }
     
 }
-
-
+    
 
 
 

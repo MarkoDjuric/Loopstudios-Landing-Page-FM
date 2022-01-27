@@ -68,12 +68,10 @@
         p {
             font-size: 0.938rem;
             line-height: 25px;
-           
-            // width: 445px;
           }
-       
-    
-         
+           
+           
+               
           @media only screen and (min-width:1168px) {
             width: clamp(327px, 100%, 541px);  
             padding-top: 17.22%;
