@@ -12,7 +12,7 @@
         .creations__heading { grid-area: column-1; }
         .creations__grid    { grid-area: column-2; }
         .creations__link    { grid-area: column-3; }
-        // grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: "column-1"
                              "column-2"
                              "column-3";
@@ -20,9 +20,9 @@
                              
         @media screen and (min-width:750px) {
            
- 
+            grid-template-columns: 1fr max-content;
             grid-template-areas: "column-1 column-3"
-                                 "column-2 column2";
+                                 "column-2 column-2";
 
   
             .creation-card {
