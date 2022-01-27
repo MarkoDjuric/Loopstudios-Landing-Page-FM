@@ -3,6 +3,17 @@
     padding: 1.563rem;
     display: grid;
     grid-template-columns: 1fr;
+
+    .content-wrapper > * {
+
+        justify-items: center;
+    }
+
+
+    h2 {
+
+        justify-self: center;
+    }
     
 }
 
