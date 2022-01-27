@@ -3,15 +3,40 @@
     margin-top:6rem; 
     
     
-    .content-wrapper {
+    &__content-wrapper {
         
         padding-left: 1.563rem;
         padding-right: 1.563rem;
       
         display: grid;
         grid-template-columns: 1fr;
+        
+
+
+
+
+        .creations__grid {
+            display: grid;
+                @media screen and (min-width:750px) {
+              
+                    // grid-template-columns: repeat(4, 256px);
+                    grid-template-columns:1fr 1fr;
+                    gap: 24px;
+                }
+
+                @media screen and (min-width:999px) {
+                  
+                     grid-template-columns: repeat(4, 1fr);
+         
+                    gap: 23px;
+                }
+            
 
     
+            
+            }
+    
+
         h2 {
             padding-bottom: 3rem;
             justify-self: center;
@@ -25,6 +50,7 @@
     }
     
 }
+    
     
 
 
