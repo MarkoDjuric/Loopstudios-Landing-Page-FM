@@ -18,21 +18,32 @@
         grid-template-areas: "column-1"
                              "column-2"
                              "column-3";
-                         
-                             
-        @media screen and (min-width:750px) {
            
-            grid-template-columns: 1fr max-content;
-            grid-template-areas: "column-1 column-3"
+        h2 {
+            padding-bottom: 3rem;
+            justify-self: center;
+            
+        }              
+                        
+        @media screen and (min-width:750px) {
+           padding-bottom: 184px;
+            grid-template-columns: auto  auto min-content;
+            grid-template-areas: "column-1  column-3"
                                  "column-2 column-2";
+                             
 
-  
+         
             .creation-card {
                     margin-bottom: 0;
                 }     
        
         } 
-
+        @media screen and (min-width:1400px) {
+            padding-left: 0;
+            padding-right: 0;
+           
+   
+           }
     }
 
         .creation-card {
@@ -40,7 +51,7 @@
 
             @media screen and (min-width:750px) {
 
-           margin-bottom: 0 ;
+                 margin-bottom: 0 ;
             }
 
             &:hover {
@@ -154,7 +165,7 @@
 
         h2 {
             padding-bottom: 3rem;
-            justify-self: center;
+            justify-self: left;
             
         }
         
@@ -175,6 +186,11 @@
             text-transform: uppercase;
             transition: .3s;
             margin-bottom: 5.25rem;
+
+            @media screen and (min-width:750px) {
+                justify-self: right;
+            }
+            
     
             &:hover {
                 background-color: black;
