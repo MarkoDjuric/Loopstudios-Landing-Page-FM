@@ -1,5 +1,21 @@
     .footer {
         background-color: var(--black);
         max-width: 90rem;
-        
+        width: 100%;
+        display: grid;
+       grid-template-columns: 1fr;
+       justify-items: center;
+       padding-top: 56px;
+       text-align: center;
+
+       &__nav {
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            padding-top: 2rem;
+            gap: 1rem;
+        }
+      
+       }
     }
