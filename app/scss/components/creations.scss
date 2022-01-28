@@ -38,6 +38,11 @@
         .creation-card {
             margin-bottom: 24px;
 
+            @media screen and (min-width:750px) {
+
+           margin-bottom: 0;
+            }
+
             &:hover {
                 .creation-card {
                     &__img {
@@ -128,6 +133,7 @@
 
           .creations__grid {
               display: grid;
+              padding-bottom: 14px;
 
                 @media screen and (min-width:750px) {
 
