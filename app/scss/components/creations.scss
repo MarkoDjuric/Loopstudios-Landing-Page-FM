@@ -9,9 +9,11 @@
         padding-left: 1.563rem;
         padding-right: 1.563rem;
         display: grid;
+
         .creations__heading { grid-area: column-1; }
         .creations__grid    { grid-area: column-2; }
         .creations__link    { grid-area: column-3; }
+
         grid-template-columns: 1fr;
         grid-template-areas: "column-1"
                              "column-2"
@@ -96,12 +98,12 @@
                 position: absolute;
                 bottom: 2.5rem;
                 left: 2.5rem;
-                z-index: 10;
+                // z-index: 10;
                 width: 16rem;
                 color: white;
                 font-family: 'Josefin Sans', sans-serif;
-                font-size: 3rem;
-                line-height: 3rem;
+                font-size: 1.5rem;
+                line-height: 1.5rem;
                 text-transform: uppercase;
                 transition: .3s;
                 pointer-events: none;
@@ -155,15 +157,16 @@
         .creations__link {
             justify-self: center;
             border: 1px solid black;
-            padding: 1.625rem 4rem;
+            padding: 0.813rem  2.375rem 0.813rem 2.375rem;
             color: black;
             font-family: 'Alata' sans-serif;
-            font-size: 1.75rem;
-            line-height: 1.75rem;
-            letter-spacing: .625rem;
+            font-size: 0.875rem;
+            line-height: 0.875rem;
+            letter-spacing: .313rem;
             text-decoration: none;
             text-transform: uppercase;
             transition: .3s;
+            margin-bottom: 5.25rem;
     
             &:hover {
                 background-color: black;
