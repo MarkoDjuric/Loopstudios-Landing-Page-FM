@@ -27,7 +27,8 @@ First, calcualation starts from the smallest measure :
 
 
 2. To change the background image that has two resolutions (mobile / desktop), I used the <picture> tag :
-        
+  <code>      
 <picture><source media="(max-width: 999px)" srcset="images/mobile/ ">
-	<img class="creation-card__img" src="images/desktop/ " alt="arcade at night">
+	<img class="creation-card__img" src="images/desktop " alt="arcade at night">
 </picture>
+	</code>
