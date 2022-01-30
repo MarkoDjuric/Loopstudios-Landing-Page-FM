@@ -34,7 +34,7 @@
         }
 
 
-    @media only screen and (min-width:79.063em) { 
+        @media only screen and (min-width:79.063em) { 
             padding: 4rem 10.313rem 8.125rem 10.313rem;
         }
 
@@ -55,7 +55,7 @@
         }   
     }
 
-    //52.813em    
+      
             &__menu {
             
         // Mobile Menu     
@@ -132,28 +132,13 @@
                 padding:2.5rem;
             }
               
-               
-
-            // padding:calc( 24px + (40 - 24) * (100vw - 375px) / (1440 - 375) ); 
-            // min-width: 327px;
-            // margin-left: 24px;
-            // margin-right: 24px;
-            //  padding: calc(26px + 1.1vh) calc(24px + 1.1vw); // new feature
-
-            // @media only screen and (min-width:1700px) {
-
-            //     h1 {
-            //         font-size:72px;
-            //         line-height: 70px;
-            //     }
-            	
-        //}
+            }
+      
+        .right_box {
+                flex: 1;
+                flex-basis: 12%;
+            }
         }
-    .right_box {
-            flex: 1;
-            flex-basis: 12%;
-        }
-    }
 
 
 
