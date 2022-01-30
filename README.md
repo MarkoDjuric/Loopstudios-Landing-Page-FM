@@ -26,7 +26,7 @@ First, calcualation starts from the smallest measure :
  This works very well for font-sizes but not here on some reason the calculation continues to work even after the maximum width where it should otherwise stop. So I have to insert   media query myself.      
 
 
-2. To change the <bold>background image that has two resolutions (mobile / desktop), I used the <picture> tag :
+2. To change the <bold>background image</bold> that has two resolutions (mobile / desktop), I used the <picture> tag :
   ```   
 <picture><source media="(max-width: 999px)" srcset="images/mobile/image-night-arcade.jpg">
 	<img class="creation-card__img" src="images/desktop/image-night-arcade.jpg " alt="arcade at night">
