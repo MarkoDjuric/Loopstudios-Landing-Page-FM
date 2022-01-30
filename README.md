@@ -7,7 +7,7 @@ This is my fourth Frontend Metnor challege [Loopstudios-Landing-Page](https://ww
 
 ## Overview
 
-* Mobile First approach - works on every device :ballot_box_with_check:
+* Mobile First approach :ballot_box_with_check:
 * SCSS :ballot_box_with_check:
 * CSS Grid :ballot_box_with_check:
 * Pixel perfect :ballot_box_with_check:
