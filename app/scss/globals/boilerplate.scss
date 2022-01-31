@@ -49,6 +49,10 @@ li {
 	&:hover {
 		 border-bottom: 0.3px solid white;
 		}
+	
+	            &:focus {
+                outline: 2px dotted white;
+            }
 	}
 
 
